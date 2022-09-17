@@ -1,0 +1,276 @@
+{{ 'aboutUsSections.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<div style=" padding-top: 100px;">
+    <!-- section 1 -->
+    <div class="aboutUsSectionPiece">
+       
+
+            <div class="image-container">
+                <div class="blobImage b1">
+                    <img 
+                        src="{{ section.settings.imageOne | img_url: '500x' }}"
+                        class="blob-img b1"
+                    />
+                    {%- if settings.iconOne != blank -%}
+                        <img src="{{ section.settings.iconOne | img_url: '100x' }}" class="blob-icon"/>
+                    {%- endif -%}
+                    
+                    
+                </div>
+                
+                
+            </div>
+
+        
+        <div class="section-text">
+            <h1>
+                {{ section.settings.headingOne }}
+            </h1>
+            <p>
+                {{ section.settings.bodyOne }}
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="aboutUsSectionPiece reverse">
+        
+
+            <div class="image-container">
+                <div class="blobImage b2">
+                    <img 
+                        src="{{ section.settings.imageTwo | img_url: '300x' }}"
+                        class="blob-img b2"
+                    />
+                    {%- if settings.iconTwo != blank -%}
+                        <img src="{{ section.settings.iconTwo | img_url: '100x' }}" class="blob-icon"/>
+                    {%- endif -%}
+                    
+                    
+                </div>
+                
+                
+            </div>
+
+        
+        <div class="section-text">
+            <h1>
+                {{ section.settings.headingTwo }}
+            </h1>
+            <p>
+                {{ section.settings.bodyTwo }}
+            </p>
+        </div>
+    </div>
+
+    <!-- section 3 -->
+    <div class="aboutUsSectionPiece">
+        
+
+            <div class="image-container">
+                <div class="blobImage b3">
+                    <img 
+                        src="{{ section.settings.imageThree | img_url: '500x' }}"
+                        class="blob-img b3"
+                    />
+                    {%- if settings.iconThree != blank -%}
+                        <img src="{{ section.settings.iconThree | img_url: '100x' }}" class="blob-icon"/>
+                    {%- endif -%}
+                    
+                    
+                </div>
+                
+                
+            </div>
+
+        
+        <div class="section-text">
+            <h1>
+                {{ section.settings.headingThree }}
+            </h1>
+            <p>
+                {{ section.settings.bodyThree }}
+            </p>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="aboutUsSectionPiece reverse">
+        
+
+            <div class="image-container">
+                <div class="blobImage b4">
+                    {%- if section.settings.imageFour != blank -%}
+                        <img 
+                            src="{{ section.settings.imageFour | img_url: '500x' }}"
+                            class="blob-img b4"
+                        />
+                    {%- endif -%}
+                    {%- if settings.iconFour != blank -%}
+                        <img src="{{ section.settings.iconFour | img_url: '100x' }}" class="blob-icon"/>
+                    {%- endif -%}
+                   
+                    
+                    
+                </div>
+                <!-- <div class="blobBack">
+     
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265.49 252.51">
+                        <defs>
+                            <style>.cls-1{fill:#c8b1e6;}</style>
+                        </defs>
+                        <g id="Layer_1-2"><path class="cls-1" d="M.05,107.24c.46,14.39,4.26,29.72,12.13,45.66,14.9,30.18,41.27,53.33,69.93,70.98,21.41,13.19,44.81,23.87,69.69,27.46,59.2,8.55,112.24-30.57,113.66-91.85,.69-29.73-10.06-58.78-25.27-84.34C218.8,39.23,185.33,7.3,143.94,1.4,72.02-8.86-2.14,38.48,.05,107.24Z" /></g>
+                    </svg>
+                </div> -->
+                
+            </div>
+
+        
+        <div class="section-text">
+            <h1>
+                {{ section.settings.headingFour }}
+            </h1>
+            <p>
+                {{ section.settings.bodyFour }}
+            </p>
+        </div>
+    </div>
+    <!-- <div style="height: 100px;">
+        <slider-component class="slider-mobile-gutter">
+            <ul id="Slider-{{ section.id }}" class="grid grid--4-col " role="list">
+              <li id="Slide-{{ section.id }}" class="grid__item slider__slide" style="height: 100px;">
+                <img src="../assets/4WeeksIcon.svg">
+              </li>
+              <li>
+                {% render '6WeeksIcon.liquid' %}
+              </li>
+              <li>
+                {% render 'HalfIcon.liquid' %}
+              </li>
+            </ul>
+            
+          </slider-component>
+
+    </div> -->
+</div>
+
+{% schema %}
+{
+    "name": "About Us",
+    "class": "section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "imageOne",
+            "label": "Image One"
+        },
+        {
+            "type": "image_picker",
+            "id": "iconOne",
+            "label": "Icon for image"
+        },
+        {
+           
+            "type": "richtext",
+            "id": "headingOne",
+            "label": "Header One",
+            "default": "<p>Insert Header text here</p>"
+            
+        },
+        {
+           
+            "type": "richtext",
+            "id": "bodyOne",
+            "label": "Body One",
+            "default": "<p>Insert body text here</p>"
+            
+        },
+        {
+            "type": "image_picker",
+            "id": "imageTwo",
+            "label": "Image Two"
+        },
+        {
+            "type": "image_picker",
+            "id": "iconTwo",
+            "label": "Icon for image"
+        },
+        {
+           
+            "type": "richtext",
+            "id": "headingTwo",
+            "label": "Header Two",
+            "default": "<p>Insert Header text here</p>"
+            
+        },
+        {
+           
+            "type": "richtext",
+            "id": "bodyTwo",
+            "label": "Body Two",
+            "default": "<p>Insert body text here</p>"
+            
+        },
+        {
+            "type": "image_picker",
+            "id": "imageThree",
+            "label": "Image Three"
+        },
+        {
+            "type": "image_picker",
+            "id": "iconThree",
+            "label": "Icon for image"
+        },
+        {
+           
+            "type": "richtext",
+            "id": "headingThree",
+            "label": "Header Three",
+            "default": "<p>Insert Header text here</p>"
+            
+        },
+        {
+           
+            "type": "richtext",
+            "id": "bodyThree",
+            "label": "Body Three",
+            "default": "<p>Insert body text here</p>"
+            
+        },
+        {
+            "type": "image_picker",
+            "id": "imageFour",
+            "label": "Image Four"
+        },
+        {
+            "type": "image_picker",
+            "id": "iconFour",
+            "label": "Icon for image"
+        },
+        {
+           
+            "type": "richtext",
+            "id": "headingFour",
+            "label": "Header Four",
+            "default": "<p>Insert Header text here</p>"
+            
+        },
+        {
+           
+            "type": "richtext",
+            "id": "bodyFour",
+            "label": "Body Four",
+            "default": "<p>Insert body text here</p>"
+            
+        }
+        
+    ],
+   
+    "presets": [
+        {
+            "name": "About Us page body"
+        }
+    ] 
+}
+{% endschema %}

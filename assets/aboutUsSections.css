@@ -1,0 +1,210 @@
+.aboutUsSectionPiece {
+    display: flex;
+    
+    position: relative;
+    align-items: flex-start;
+    width: 100%;
+    height:fit-content;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.aboutUsSectionPiece.reverse {
+    flex-direction:row-reverse;
+}
+
+.image-container {
+    /* max-width: 700px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 450px;
+    /* width: 350px; */
+    margin: 0px 20px;
+    height: 100%;
+    
+    padding-top: 100px;
+
+    position: sticky;
+    top: 0;
+  
+   
+    
+   
+}
+
+.blobImage {
+    
+    
+
+    width: 450px;
+    height: 450px;
+    top: 0;
+    /* width: 300px;
+    height: 300px; */
+
+    /* background-image: url(blobOne.svg); */
+
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   
+   
+}
+
+.blob-icon {
+    position: absolute;
+    
+    transform-origin: center;
+
+}
+
+
+/* Blob background images */
+
+.blobImage.b1 {
+    background-image: url(blobOne.svg);  
+    background-repeat: no-repeat;
+}
+
+.blobImage.b2 {
+    background-image: url(blobTwo.svg);  
+    background-repeat: no-repeat;
+    
+    
+}
+
+.blobImage.b3 {
+    background-image: url(BlobThree.svg);  
+    background-repeat: no-repeat;
+}
+
+.blobImage.b4 {
+    background-image: url(BlobFour.svg);  
+    background-repeat: no-repeat;
+}
+
+/* Clipping mask blobs  */
+.blob-img {
+    /* clip-path: url(#blob1); */
+    /* clip-path: path("M.05,107.24c.46,14.39,4.26,29.72,12.13,45.66,14.9,30.18,41.27,53.33,69.93,70.98,21.41,13.19,44.81,23.87,69.69,27.46,59.2,8.55,112.24-30.57,113.66-91.85,.69-29.73-10.06-58.78-25.27-84.34C218.8,39.23,185.33,7.3,143.94,1.4,72.02-8.86-2.14,38.48,.05,107.24Z"); */
+    object-fit: cover;
+
+    position: relative;
+
+    transform: scale(1.4);
+    transform-origin: center;
+  
+    /* transform: scale(100%); */
+  
+
+    /* Old settings, come back to this if something goes wrong */
+    aspect-ratio: 1/1;
+    /* width: 280px;
+    height: 280px; */
+
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+    
+
+}
+
+.blob-img.b1 {
+    
+   
+    clip-path: path("M.05,107.24c.46,14.39,4.26,29.72,12.13,45.66,14.9,30.18,41.27,53.33,69.93,70.98,21.41,13.19,44.81,23.87,69.69,27.46,59.2,8.55,112.24-30.57,113.66-91.85,.69-29.73-10.06-58.78-25.27-84.34C218.8,39.23,185.33,7.3,143.94,1.4,72.02-8.86-2.14,38.48,.05,107.24Z");
+    
+}
+
+.blob-img.b2 {
+   
+
+    clip-path: path("M83.3,284.93c15.85,2.78,32.77,2.21,49.65-1.57,87.16-19.48,105.26-134.26,94.55-205.37-3.17-21.07-17.54-55.39-36.06-65.91-46.07-26.18-89.45-4.7-121.59,16.37C37.07,49.93,15.78,84.66,6.57,122.33c-8.45,34.55-10.24,72.05,3.61,104.82,14.1,33.35,41.46,52.24,73.11,57.78Z");
+}
+
+.blob-img.b3 {
+    clip-path: path("M35.22,28.94c-10.61,10.62-19.08,23.5-24.78,37.39-13.46,32.83-15.41,75.36,3.12,106.47,16.62,27.91,47.16,44.26,77.24,56.53,31.93,13.02,68.56,22.89,100.22,9.24,41.6-17.94,67.26-68.28,69.8-111.78,3.29-56.37-42.28-92.38-90.3-112.22C139.5,1.74,104.22-5.6,72.46,5.28c-14.09,4.83-26.72,13.13-37.24,23.66Z");  
+}
+
+.blob-img.b4 {
+    clip-path: path("M.05,107.24c.46,14.39,4.26,29.72,12.13,45.66,14.9,30.18,41.27,53.33,69.93,70.98,21.41,13.19,44.81,23.87,69.69,27.46,59.2,8.55,112.24-30.57,113.66-91.85,.69-29.73-10.06-58.78-25.27-84.34C218.8,39.23,185.33,7.3,143.94,1.4,72.02-8.86-2.14,38.48,.05,107.24Z");
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    /* height: fit-content; */
+    min-height: 100vh;
+    text-align: left;
+    margin: 0 20px;
+}
+
+
+
+/* .reverse .section-text {
+    align-items: flex-end;
+} */
+
+.section-text h1 p {
+ height: fit-content;
+ margin:  0;
+ width: 300px;
+}
+
+.section-text h1 {
+    margin: 0;
+}
+
+@media screen and (max-width:750px) {
+
+
+
+    .image-container {
+        padding: 50px 0 50px 0;
+        margin: auto;
+        width: 320px;
+        background-color: rgb(var(--color-background));
+    }
+
+    .blob-img {
+        /* transform-origin: 0 0; */
+        
+        transform-origin: center center;
+        transform: scale(0.9);
+    }
+
+    .blobImage {
+        position: relative;
+       height: 300px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        margin: 0 auto;
+       
+    }
+
+
+    .aboutUsSectionPiece,
+    .aboutUsSectionPiece.reverse {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .section-text {
+        
+        margin: auto;
+        min-height: fit-content;
+        padding-top: 100px;
+        width: 300px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,127 @@
+.outerContainer {
+    margin: 40px 0px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url(blobOne.svg);
+    background-position: left -25% bottom 100% ;
+    transform-origin: bottom left;
+    background-size: 70%;
+   
+    background-repeat: no-repeat;
+    overflow-y: visible;
+}
+
+.outerContainer.reverse {
+
+    flex-direction: row-reverse;
+
+    background-image: url(BlobFour.svg);
+    background-position: right -150% bottom 80%;
+    background-size: 80%;
+
+}
+
+.productImg {
+    height: 600px;
+    position: relative;
+    /* background-image: url(blobOne.svg);
+    background-position: bottom 120% left 50%; 
+    background-size: 200%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: visible; */
+}
+
+.productImg img {
+    width: 100%;
+    max-height: 600px;
+    position: relative;
+    object-fit: contain;
+}
+
+.productContainer {
+    padding: 40px 20px;
+    width: 45%;
+    position: relative;
+    overflow-x: visible;
+}
+
+.productInfo {
+    padding: 0 80px;
+}
+
+.productContainer h2 {
+    margin: 0;
+    line-height: 1;
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.productContainer p {
+    line-height: 1;
+}
+   
+
+.reviews-container {
+    margin: 0px 40px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-container h3 {
+    border-bottom: 1px solid #333;
+    font-weight: bold;
+    kerning: 2px;
+}
+
+
+@media only screen and (max-width: 749px){
+
+    .outerContainer {
+        height: auto;
+        background-image: none;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        padding-bottom: 50px;
+    }
+
+    .outerContainer.reverse {
+        background-image: none;
+        flex-direction: column;
+    }
+
+    .productContainer {
+        width: 100%;
+    }
+
+    .productContainer h2 {
+        font-size: 32px;
+    }
+
+    .productImg {
+        height: auto;
+        background-image: url(blobOne.svg);
+        background-position: center; 
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: visible;
+        background-size: 80%;
+    }
+
+    .reverse .productImg {
+        height: auto;
+        background-image: url(BlobFour.svg);
+        background-position: center; 
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: visible;
+        background-size: 80%;
+    }
+}

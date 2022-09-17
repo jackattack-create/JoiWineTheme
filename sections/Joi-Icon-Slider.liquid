@@ -1,0 +1,129 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'section-new-multicolumn.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column;" class="mobile-primary-color">
+
+    <div>
+        <h1 class="mobile-visible slider-header" style="color:#f9f6f2;">     
+            {{ section.settings.section_heading }}
+        </h1>
+    </div>
+    <slideshow-component class="slider-mobile-gutter joi-slider" >
+      <div class="button-div" style="margin-left: 20px;">
+        <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" style=" width: 50px; height: 50px;">
+            {% render 'LightArrowLeft' %}
+        </button>
+
+      </div>
+        <ul 
+            id="Slider-{{ section.id }}" 
+            class="multicolumn-list grid grid--1-col grid--4-col-desktop slider slider--mobile slider-mobile-gutter " 
+            
+            role="list"
+        >
+        {%- for block in section.blocks -%}
+            <li id="Slide-{{ section.id }}-{{ forloop.index }}" 
+                class=" grid__item slider__slide  center" 
+                style="padding: 20px;"
+            >
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 150px; margin: auto; padding: 20px;">
+                    <img  
+                    src="{{ block.settings.image | img_url: '225x' }}"
+                    srcset="{%- if settings.image.width >= 275 -%}{{ settings.image.width | img_url: '275x' }} 275w,{%- endif -%}
+                    {%- if settings.image.width >= 550 -%}{{ settings.image.width | img_url: '550x' }} 550w,{%- endif -%}
+                    {%- if settings.image.width >= 710 -%}{{ settings.image.width | img_url: '710x' }} 710w,{%- endif -%}
+                    {%- if settings.image.width >= 1420 -%}{{ settings.image.width | img_url: '1420x' }} 1420w,{%- endif -%} 
+                    {{ settings.image.width| img_url: 'master' }} {{ settings.image.width }}w"
+                    style="height: 150px;"
+                  />
+                  {%- if block.settings.text != blank -%}
+                      <p class="slider-icon-text" style="width: 120px; text-align: center; margin-top: 20px;">  {{ block.settings.text  }} </p>
+                {%- endif -%}
+
+                </div>
+              </li>
+        {%- endfor -%}  
+            
+        </ul>
+        <div class="button-div" style="margin-right: 20px;">
+          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" style=" width: 50px; height: 50px;">
+            {% render 'LightArrowRight' %}
+        </button>
+        </div>
+      </slideshow-component>
+     
+    </div>
+
+    {% schema %}
+    {
+
+        "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Header",
+            "default": "Heading"
+        },
+        
+        {
+            "type": "select",
+            "id": "color_scheme",
+            "options": [
+              {
+                "value": "accent-1",
+                "label": "t:sections.all.colors.accent_1.label"
+              },
+              {
+                "value": "accent-2",
+                "label": "t:sections.all.colors.accent_2.label"
+              },
+              {
+                "value": "background-1",
+                "label": "t:sections.all.colors.background_1.label"
+              },
+              {
+                "value": "background-2",
+                "label": "t:sections.all.colors.background_2.label"
+              },
+              {
+                "value": "inverse",
+                "label": "t:sections.all.colors.inverse.label"
+              }
+            ],
+            "default": "background-1",
+            "label": "t:sections.all.colors.label"
+          }
+        ],
+        "blocks": [
+            {
+                "type": "column",
+                "name": "Icon Column",
+                "settings": [
+
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Icon"
+        
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Body Text",
+                        "default": "Input Text Here"
+
+                    }
+                
+                ]
+            }
+        ],
+    
+    "presets": [
+        {
+            "name": "Joi Wine Icon Section"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,193 @@
+.headerImg {
+    height: 300px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.headerImg img {
+    max-width: 900px; 
+    margin: auto;
+}
+
+.joi-slider {
+    max-width: 1000px; 
+    display: flex;  
+    align-items:center;
+}
+
+.joi-slider-middle {
+    overflow-x: scroll; 
+    width: 100%; 
+    height: 350px; 
+}
+
+
+.joi-card-container {
+    position: relative; 
+    height: 275px; 
+    width: 275px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+}
+
+.joi-card-background {
+    top: 0;
+    position: absolute; 
+    height: 285px; 
+    width: 285px; 
+    object-fit: cover; 
+    z-index: 1;
+}
+
+.joi-card-background img {
+    width: 275px;
+    height: 275px;
+}
+
+.joi-card-content {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #F9F6F2; 
+    height: 225px; 
+    width: 225px; 
+    z-index: 2;
+    padding: 10px 20px;
+    
+}
+
+.joi-card-content h2 {
+    line-break: normal;
+    display: flex;
+    font-size: 36px; 
+    max-width: 80%;
+    line-height: 1.2;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.joi-card-content h4 {
+    font-size: 12px;
+    color: #cc9933;
+}
+
+.joi-card-content p {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.button-div {
+    width: 15%; 
+    height: 100%; 
+    display: none; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.button-div button {
+    height: 75px;
+    width: 75px;
+}
+
+.mobile-visible {
+    display: none;
+}
+
+.mobile-invisible {
+    display: flex;
+}
+
+.mobile-primary-color {
+    background-color: none;
+}
+
+.slider-header {
+    color:#f9f6f2;
+}
+
+.slider-icon-text {
+    color:#00554c;
+    line-height: 1;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width:750px) {
+
+    .headerImg {
+        height: fit-content;
+        padding: 40px 0px;
+    }
+
+    .headerImg Img {
+        width: 80%;
+        margin: 0 20px;
+    }
+
+    .joi-slider {
+        max-width: 350px;
+    }
+
+    .joi-slider-middle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .joi-card-container,
+    .joi-card-background,
+    .joi-card-background img {
+        height: 225px;
+        width: 225px; 
+        margin: auto;
+    }
+
+    .joi-card-content {
+        height: 180px;
+        width: 180px;
+    }
+
+    .joi-card-content h2  {
+        line-height: 0.8;
+        font-size: 24px;
+        height: 50px;
+      
+       
+    }
+
+    .joi-card-content p {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .joi-card-content h4  {
+        margin: 0;
+    }
+
+    .button-div {
+        display: flex;
+    }
+
+    .mobile-visible {
+        display: flex;
+    }
+
+    .mobile-invisible {
+        display: none;
+    }
+
+    .mobile-primary-color {
+        background-color: #00554c
+    }
+
+    .slider-icon-text {
+        color:#f9f6f2;
+    }
+}

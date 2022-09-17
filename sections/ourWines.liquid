@@ -1,0 +1,177 @@
+{{ 'ourWines.css' | asset_url | stylesheet_tag }}
+
+<div>
+
+    <div class="outerContainer">
+  
+      <div class="productContainer productImg">
+          <img src="{{ section.settings.productOne | img_url: '500x' }}"/>
+  
+      </div>
+      <div class="productContainer productInfo">
+          <h2>{{ section.settings.productOne.title }}</h2>
+          <!-- <div>
+              {%- if section.settings.productOne.reviews.rating.value != blank -%}
+                {% liquid
+                 assign rating_decimal = 0
+                 assign decimal = section.settings.productOne.reviews.rating.value.rating | modulo: 1
+                 if decimal >= 0.3 and decimal <= 0.7
+                  assign rating_decimal = 0.5
+                elsif decimal > 0.7
+                  assign rating_decimal = 1
+                 endif
+                %}
+                <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: section.settings.productOne.metafields.reviews.rating.value, rating_max: section.settings.productOne.reviews.rating.value.scale_max }}">
+                  <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ section.settings.productOne.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
+                </div>
+                <p class="rating-text caption">
+                  <span aria-hidden="true">{{ section.settings.productOne.reviews.rating.value }} / {{ section.settings.productOne.reviews.rating.value.scale_max }}</span>
+                </p>
+                <p class="rating-count caption">
+                  <span aria-hidden="true">({{ section.settings.productOne.reviews.rating_count }})</span>
+                  <span class="visually-hidden">{{ section.settings.productOne.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
+                </p>
+              {%- endif -%}
+              <h4>WRITE A REVIEW</h4>
+          </div> -->
+          <div>
+              <h4>Tasting Notes</h4>
+              <p>{{ section.settings.productOne.description }}</p>
+          </div>
+  
+          <div>
+              <h4>Pair with</h4>
+              <p>{{ section.settings.productOne.metafields.custom.pairings.value }}</p>
+          </div>
+  
+          <div>
+  
+          </div>
+      </div>
+    </div>
+    <!-- <div class="reviews-container">
+      <h3>REVIEWS</h3>
+      <div>
+        {%- if section.settings.productOne.reviews.rating.value != blank -%}
+              {% liquid
+               assign rating_decimal = 0
+               assign decimal = section.settings.productOne.reviews.rating.value.rating | modulo: 1
+               if decimal >= 0.3 and decimal <= 0.7
+                assign rating_decimal = 0.5
+              elsif decimal > 0.7
+                assign rating_decimal = 1
+               endif
+              %}
+              <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: section.settings.productOne.metafields.reviews.rating.value, rating_max: section.settings.productOne.reviews.rating.value.scale_max }}">
+                <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ section.settings.productOne.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
+              </div>
+              <p class="rating-text caption">
+                <span aria-hidden="true">{{ section.settings.productOne.reviews.rating.value }} / {{ section.settings.productOne.reviews.rating.value.scale_max }}</span>
+              </p>
+              <p class="rating-count caption">
+                <span aria-hidden="true">({{ section.settings.productOne.reviews.rating_count }})</span>
+                <span class="visually-hidden">{{ section.settings.productOne.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
+              </p>
+            {%- endif -%}
+      </div>
+    </div> -->
+
+    <!-- Section 2 for product 2 -->
+    <div class="outerContainer reverse">
+  
+      <div class="productContainer productImg">
+          <img src="{{ section.settings.productTwo | img_url: '500x' }}"/>
+  
+      </div>
+      <div class="productContainer productInfo">
+          <h2>{{ section.settings.productTwo.title }}</h2>
+          <!-- <div>
+              {%- if section.settings.productOne.reviews.rating.value != blank -%}
+                {% liquid
+                 assign rating_decimal = 0
+                 assign decimal = section.settings.productOne.reviews.rating.value.rating | modulo: 1
+                 if decimal >= 0.3 and decimal <= 0.7
+                  assign rating_decimal = 0.5
+                elsif decimal > 0.7
+                  assign rating_decimal = 1
+                 endif
+                %}
+                <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: section.settings.productOne.metafields.reviews.rating.value, rating_max: section.settings.productOne.reviews.rating.value.scale_max }}">
+                  <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ section.settings.productOne.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
+                </div>
+                <p class="rating-text caption">
+                  <span aria-hidden="true">{{ section.settings.productTwo.reviews.rating.value }} / {{ section.settings.productOne.reviews.rating.value.scale_max }}</span>
+                </p>
+                <p class="rating-count caption">
+                  <span aria-hidden="true">({{ section.settings.productTwo.reviews.rating_count }})</span>
+                  <span class="visually-hidden">{{ section.settings.productTwo.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
+                </p>
+              {%- endif -%}
+              <h4>WRITE A REVIEW</h4>
+          </div> -->
+          <div>
+              <h3>Tasting Notes</h3>
+              <p>{{ section.settings.productTwo.description }}</p>
+          </div>
+  
+          <div>
+              <h3>Pair with</h3>
+              <p>{{ section.settings.productTwo.metafields.custom.pairings.value }}</p>
+          </div>
+  
+          <div>
+  
+          </div>
+      </div>
+    </div>
+    <!-- <div class="reviews-container">
+      <h3>REVIEWS</h3>
+      <div>
+        {%- if section.settings.productTwo.reviews.rating.value != blank -%}
+              {% liquid
+               assign rating_decimal = 0
+               assign decimal = section.settings.productOne.reviews.rating.value.rating | modulo: 1
+               if decimal >= 0.3 and decimal <= 0.7
+                assign rating_decimal = 0.5
+              elsif decimal > 0.7
+                assign rating_decimal = 1
+               endif
+              %}
+              <div class="rating" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: section.settings.productOne.metafields.reviews.rating.value, rating_max: section.settings.productOne.reviews.rating.value.scale_max }}">
+                <span aria-hidden="true" class="rating-star color-icon-{{ settings.accent_icons }}" style="--rating: {{ product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ section.settings.productOne.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"></span>
+              </div>
+              <p class="rating-text caption">
+                <span aria-hidden="true">{{ section.settings.productTwo.reviews.rating.value }} / {{ section.settings.productOne.reviews.rating.value.scale_max }}</span>
+              </p>
+              <p class="rating-count caption">
+                <span aria-hidden="true">({{ section.settings.productTwo.reviews.rating_count }})</span>
+                <span class="visually-hidden">{{ section.settings.productTwo.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
+              </p>
+            {%- endif -%}
+      </div>
+    </div> -->
+</div>
+
+{% schema %}
+{
+    "name": "ourWines",
+    "class": "section",
+    "settings": [
+      {
+        "type": "product",
+        "id": "productOne",
+        "label": "Product-Handle"
+      },
+      {
+        "type": "product",
+        "id": "productTwo",
+        "label": "Product-Handle"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Our Wine Sections"
+        }
+    ]
+}
+{% endschema %}

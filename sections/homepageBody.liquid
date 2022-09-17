@@ -1,0 +1,209 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'HeroPage.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div>
+    <!-- section 1 -->
+    <div class="heroSec Sec1">
+        <div class="heroSecImg">
+            <img src="{{ section.settings.blurb1 | img_url: '300x' }}" class="marketingImg1"/>
+            <img  
+                src="{{ section.settings.image1 | img_url: '300x' }}"
+                srcset="{%- if section.settings.image1.width >= 165 -%}{{ section.settings.image1 | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if section.settings.image1.width >= 360 -%}{{ section.settings.image1 | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if section.settings.image1.width >= 535 -%}{{ section.settings.image1 | img_url: '535x' }} 535w,{%- endif -%}
+                {%- if section.settings.image1.width >= 750 -%}{{ section.settings.image1 | img_url: '750x' }} 750w,{%- endif -%}
+                {%- if section.settings.image1.width >= 1070 -%}{{ section.settings.image1 | img_url: '1070x' }} 1070w,{%- endif -%}
+                {%- if section.settings.image1.width >= 1500 -%}{{ section.settings.image1 | img_url: '1500x' }} 1500w,{%- endif -%}
+                {{ section.settings.image1 | img_url: 'master' }} {{ section.settings.image1.width }}w"
+                class="secImg"
+            />
+
+        </div>
+
+        
+        <div class="heroSecTextBox">
+            <h1>
+                {{ section.settings.header1 }}
+            </h1>
+            <p>
+                {{ section.settings.body1 }}
+            </p>
+            <button {% if section.settings.button_link1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link1 }}"{% endif %} >
+                  {{ section.settings.button_label1 | escape }}
+            </button>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <!-- <div class="heroSec heroSec2">
+        <div class="heroSecTextBox" style="margin: 50px 0">
+
+            <h1>
+                {{ section.settings.header2 }}
+            </h1>
+            <p>{{ section.settings.body2 }}</p>
+            <button {% if section.settings.button_link2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link2 }}"{% endif %} >
+                {{ section.settings.button_label2 | escape }}
+            </button>
+        </div>
+        <img  
+            src="{{ section.settings.image2 | img_url: '300x' }}"
+            srcset="{%- if section.settings.image2.width >= 165 -%}{{ section.settings.image2 | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if section.settings.image2.width >= 360 -%}{{ section.settings.image2 | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if section.settings.image2.width >= 535 -%}{{ section.settings.image2 | img_url: '535x' }} 535w,{%- endif -%}
+            {%- if section.settings.image2.width >= 750 -%}{{ section.settings.image2 | img_url: '750x' }} 750w,{%- endif -%}
+            {%- if section.settings.image2.width >= 1070 -%}{{ section.settings.image2 | img_url: '1070x' }} 1070w,{%- endif -%}
+            {%- if section.settings.image2.width >= 1500 -%}{{ section.settings.image2 | img_url: '1500x' }} 1500w,{%- endif -%}
+            {{ section.settings.image2 | img_url: 'master' }} {{ section.settings.image2.width }}w"
+            style="width: 50%; object-fit: cover; margin: -100px 0px 0 50px;"
+        />
+    </div> -->
+    <!-- Section 3 -->
+    <div>
+        <div class="heroSec sec3">
+            <div class="heroSecImg">
+                <img src="{{ section.settings.blurb2 | img_url: '300x' }}" class="marketingImg2"/>
+                <img  
+                    src="{{ section.settings.image3 | img_url: '300x' }}"
+                    srcset="{%- if section.settings.image3.width >= 165 -%}{{ section.settings.image3 | img_url: '165x' }} 165w,{%- endif -%}
+                    {%- if section.settings.image3.width >= 360 -%}{{ section.settings.image3 | img_url: '360x' }} 360w,{%- endif -%}
+                    {%- if section.settings.image3.width >= 535 -%}{{ section.settings.image3 | img_url: '535x' }} 535w,{%- endif -%}
+                    {%- if section.settings.image3.width >= 750 -%}{{ section.settings.image3 | img_url: '750x' }} 750w,{%- endif -%}
+                    {%- if section.settings.image3.width >= 1070 -%}{{ section.settings.image3 | img_url: '1070x' }} 1070w,{%- endif -%}
+                    {%- if section.settings.image3.width >= 1500 -%}{{ section.settings.image3 | img_url: '1500x' }} 1500w,{%- endif -%}
+                    {{ section.settings.image3 | img_url: 'master' }} {{ section.settings.image3.width }}w"
+                    class="secImg"
+                />
+
+            </div>
+            <div class="heroSecTextBox">
+                <h1>
+                    {{ section.settings.header3 }}
+                </h1>
+                <p>
+                    {{ section.settings.body3 }}
+                </p>
+                <button {% if section.settings.button_link1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link1 }}"{% endif %} >
+                      {{ section.settings.button_label3 | escape }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Home Body",
+    "class": "section",
+    "settings": [ 
+        {
+        "type": "image_picker",
+         "id": "image1",
+         "label": "t:sections.image-with-text.settings.image.label"
+        },
+        {
+            "type": "image_picker",
+             "id": "blurb1",
+             "label": "Marketing Blurb Image One"
+        },
+        {
+            "type": "richtext",
+            "id": "header1",
+            "default": "<p>Header one</p>",
+            "label": "Header section 1"
+        },
+        {
+            "type": "richtext",
+            "id": "body1",
+            "default": "<p>Body one</p>",
+            "label": "body section 1"
+        },
+        {
+            "type": "text",
+            "id": "button_label1",
+            "default": "Button label 1",
+            "label": "t:sections.multicolumn.settings.button_label.label"
+        },
+        {
+            "type": "url",
+            "id": "button_link1",
+            "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+        },
+        //section 2
+       // {
+         //   "type": "image_picker",
+         //    "id": "image2",
+         //    "label": "t:sections.image-with-text.settings.image.label"
+         //   },
+         //   {
+         //       "type": "richtext",
+         //       "id": "header2",
+         //       "default": "<p>Header one</p>",
+         //       "label": "Header section 2"
+         //   },
+         //   {
+         //       "type": "richtext",
+         //       "id": "body2",
+         //       "default": "<p>Body two</p>",
+         //       "label": "body section 2"
+         //   },
+         //   {
+         //       "type": "text",
+         //       "id": "button_label2",
+         //       "default": "Button label 2",
+         //       "label": "t:sections.multicolumn.settings.button_label.label"
+         //   },
+         //  // {
+               //"type": "url",
+               // "id": "button_link2",
+                //"label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+           // },
+           
+            //section 3
+            {
+                "type": "image_picker",
+                 "id": "image3",
+                 "label": "t:sections.image-with-text.settings.image.label"
+                },
+                {
+                    "type": "image_picker",
+                     "id": "blurb2",
+                     "label": "Marketing Blurb Image Two"
+                },
+                {
+                    "type": "richtext",
+                    "id": "header3",
+                    "default": "<p>Header one</p>",
+                    "label": "Header section 1"
+                },
+                {
+                    "type": "richtext",
+                    "id": "body3",
+                    "default": "<p>Body one</p>",
+                    "label": "body section 1"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label3",
+                    "default": "Button label 3",
+                    "label": "t:sections.multicolumn.settings.button_label.label"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link3",
+                    "label": "t:sections.image-with-text.blocks.button.settings.button_link.label"
+                }
+            
+  ],
+  "presets": [
+  {
+    "name": "Home page body"
+  }
+]
+
+}
+
+{% endschema %}
