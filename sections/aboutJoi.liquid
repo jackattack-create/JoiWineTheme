@@ -9,7 +9,7 @@
             <div class="image-container">
                 <div class="blobImage b1">
                     <img 
-                        src="{{ section.settings.imageOne | img_url: '500x' }}"
+                        src="{{ section.settings.imageOne | img_url: 'master' }}"
                         class="blob-img b1"
                     />
                     {%- if settings.iconOne != blank -%}
@@ -40,7 +40,7 @@
             <div class="image-container">
                 <div class="blobImage b2">
                     <img 
-                        src="{{ section.settings.imageTwo | img_url: '300x' }}"
+                        src="{{ section.settings.imageTwo | img_url: 'master' }}"
                         class="blob-img b2"
                     />
                     {%- if settings.iconTwo != blank -%}
@@ -71,7 +71,7 @@
             <div class="image-container">
                 <div class="blobImage b3">
                     <img 
-                        src="{{ section.settings.imageThree | img_url: '500x' }}"
+                        src="{{ section.settings.imageThree | img_url: 'master' }}"
                         class="blob-img b3"
                     />
                     {%- if settings.iconThree != blank -%}
@@ -103,7 +103,7 @@
                 <div class="blobImage b4">
                     {%- if section.settings.imageFour != blank -%}
                         <img 
-                            src="{{ section.settings.imageFour | img_url: '500x' }}"
+                            src="{{ section.settings.imageFour | img_url: 'master' }}"
                             class="blob-img b4"
                         />
                     {%- endif -%}
