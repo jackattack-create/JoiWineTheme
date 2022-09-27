@@ -109,7 +109,7 @@
 
     position: relative;
 
-    transform: scale(var(--scale));
+    transform: scale(1.8);
     transform-origin: center;
   
     /* transform: scale(100%); */
