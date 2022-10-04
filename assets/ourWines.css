@@ -19,10 +19,8 @@
 .outerContainer.reverse {
 
     flex-direction: row-reverse;
-
-    background-image: url(BlobFour.svg);
-    background-position: right -150% bottom 80%;
-    background-size: 80%;
+    background-position: right -25% bottom 100% ;
+    
 
 }
 
