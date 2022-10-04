@@ -120,8 +120,8 @@
 
     /* Old settings, come back to this if something goes wrong */
     aspect-ratio: 1/1;
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
 
     /* width: 300px;
     height: 300px; */
@@ -189,7 +189,7 @@
     
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 1000px) {
 
 
 
