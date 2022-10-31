@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     /* height:fit-content; */
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-bottom: 100px;
     padding-top: 100px;
 }
@@ -28,7 +28,7 @@
 
     width: 50vw;
     /* width: 350px; */
-    margin: 0px 20px;
+    margin: 0px 10px;
     height: 100vh;
 
     position: sticky;
@@ -120,8 +120,8 @@
 
     /* Old settings, come back to this if something goes wrong */
     aspect-ratio: 1/1;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 280px;
+    max-height: 280px;
 
     /* width: 300px;
     height: 300px; */
@@ -164,7 +164,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    max-width: 600px;
     /* height: fit-content; */
     min-height: 450px;
     text-align: left;
