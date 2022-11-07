@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 50vw;
+    width: 60vw;
     /* width: 350px; */
     margin: 0px 10px;
     height: 100vh;
@@ -40,9 +40,6 @@
 }
 
 .blobImage {
-    
-    
-
     /* width: 45vw;
     height: 45vw; */
     top: 0;
@@ -54,6 +51,7 @@
 
     height: 700px;
     width: 700px;
+    padding: 20px;
 
     /* background-image: url(blobOne.svg); */
 
@@ -103,8 +101,7 @@
 
 /* Clipping mask blobs  */
 .blob-img {
-    /* clip-path: url(#blob1); */
-    /* clip-path: path("M.05,107.24c.46,14.39,4.26,29.72,12.13,45.66,14.9,30.18,41.27,53.33,69.93,70.98,21.41,13.19,44.81,23.87,69.69,27.46,59.2,8.55,112.24-30.57,113.66-91.85,.69-29.73-10.06-58.78-25.27-84.34C218.8,39.23,185.33,7.3,143.94,1.4,72.02-8.86-2.14,38.48,.05,107.24Z"); */
+   
     object-fit: cover;
 
     position: relative;
@@ -115,8 +112,6 @@
     transform: scale(2.2);
     transform-origin: center;
   
-    /* transform: scale(100%); */
-  
 
     /* Old settings, come back to this if something goes wrong */
     aspect-ratio: 1/1;
@@ -126,15 +121,9 @@
     /* width: 300px;
     height: 300px; */
 
-   
-
-
     /* width: 30vw;
     height: 30vw; */
     position: relative;
-
-    
-
 }
 
 .blob-img.b1 {
@@ -163,29 +152,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 600px;
     /* height: fit-content; */
     min-height: 450px;
     text-align: left;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 
-
-/* .reverse .section-text {
-    align-items: flex-end;
-} */
-
 .section-text h1 p {
  height: fit-content;
- margin:  0;
+ max-width: 450px;
+ min-width: 300px;
+ margin:  0 50px;
  
 }
 
 .section-text p {
-    margin: 0;
-    width: 300px;
+    margin: 0 50px;
+    max-width: 450px;
+    min-width: 300px;
     
 }
 
@@ -234,6 +221,7 @@
     .section-text {
         
         margin: auto;
+        align-items: center;
         min-height: fit-content;
         padding-top: 50px;
         padding-bottom: 50px;
