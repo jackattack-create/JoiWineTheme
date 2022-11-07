@@ -85,6 +85,7 @@
 .blobImage.b2 {
     background-image: url(blobTwo.svg);  
     background-repeat: no-repeat;
+    width: 600px;
     
     
 }
