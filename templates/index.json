@@ -20,7 +20,7 @@
         "template--16422978945241__de1817ab-68bf-4cae-b190-859cfd5507e1-16684538921b0588cd-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Explore our Wines",
             "button_link": ""
           }
         }
@@ -51,25 +51,28 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Asset_7_300x_4c480ffb-8b05-46ca-8dd3-aa74b8ac07e2.png",
-            "text": "Input Text Here"
+            "text": "STAYS FRESH FOR SIX WEEKS AFTER OPENING"
           }
         },
         "a9cd3180-2091-4f0c-b289-91c293942bc5": {
           "type": "column",
           "settings": {
-            "text": "Input Text Here"
+            "image": "shopify:\/\/shop_images\/Asset_8_300x_97dba1d6-e348-49cb-b7f2-a51e581df5ad.png",
+            "text": "FOUR BOTTLES IN ONE JOI BOX"
           }
         },
         "0e429d75-1099-4726-ad32-e4a28e618518": {
           "type": "column",
           "settings": {
-            "text": "Input Text Here"
+            "image": "shopify:\/\/shop_images\/Asset_6_300x_55e67065-e0ac-46e0-9934-16d059d4fc6f.png",
+            "text": "HALF THE ECOLOGICAL FOORPRINT OF GLASS BOTTLES"
           }
         },
         "39671cc3-dfa1-4492-bbcd-93576be2d914": {
           "type": "column",
           "settings": {
-            "text": "Input Text Here"
+            "image": "shopify:\/\/shop_images\/Asset_5_300x_3d323a50-7a47-4dff-bf5b-be98682687af.png",
+            "text": "PRODUCED WITH MINIMAL ENVIRONMENTAL IMPACT"
           }
         }
       },
