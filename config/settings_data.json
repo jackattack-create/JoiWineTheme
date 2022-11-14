@@ -2,13 +2,14 @@
   "current": {
     "colors_solid_button_labels": "#466054",
     "colors_accent_1": "#f8f6f1",
-    "colors_accent_2": "#334FB4",
+    "colors_accent_2": "#466054",
     "colors_text": "#466054",
     "colors_outline_button_labels": "#466054",
     "colors_background_1": "#f8f6f1",
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "buttons_border_thickness": 2,
     "buttons_radius": 40,
     "sections": {
       "announcement-bar": {
