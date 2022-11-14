@@ -22,6 +22,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "inverse",
+          "logo": "shopify:\/\/shop_images\/Joi_Wine_Header_Logo.png",
           "button_link": "",
           "logo_width": 100,
           "logo_position": "top-center",
