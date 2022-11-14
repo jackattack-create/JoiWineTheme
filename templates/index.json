@@ -43,9 +43,67 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "329e42ee-bbc3-4568-9eb4-9fe8825483f5": {
+      "type": "Joi-Icon-Slider",
+      "blocks": {
+        "9f34749c-9898-4aae-bca1-23cc3d90d8c9": {
+          "type": "column",
+          "settings": {
+            "text": "Input Text Here"
+          }
+        },
+        "a9cd3180-2091-4f0c-b289-91c293942bc5": {
+          "type": "column",
+          "settings": {
+            "text": "Input Text Here"
+          }
+        },
+        "0e429d75-1099-4726-ad32-e4a28e618518": {
+          "type": "column",
+          "settings": {
+            "text": "Input Text Here"
+          }
+        },
+        "39671cc3-dfa1-4492-bbcd-93576be2d914": {
+          "type": "column",
+          "settings": {
+            "text": "Input Text Here"
+          }
+        }
+      },
+      "block_order": [
+        "9f34749c-9898-4aae-bca1-23cc3d90d8c9",
+        "a9cd3180-2091-4f0c-b289-91c293942bc5",
+        "0e429d75-1099-4726-ad32-e4a28e618518",
+        "39671cc3-dfa1-4492-bbcd-93576be2d914"
+      ],
+      "settings": {
+        "section_heading": "Heading",
+        "color_scheme": "background-1"
+      }
+    },
+    "9379a9a0-77c7-438c-a104-4306c851c398": {
+      "type": "homepageBody",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/shutterstock_486675022.png",
+        "blurb1": "shopify:\/\/shop_images\/MArketing_Disclaimer_One_300x_2bec382f-3afd-462c-9e45-dea65efa3493.png",
+        "header1": "<p>Header one<\/p>",
+        "body1": "<p>Body one<\/p>",
+        "button_label1": "Button label 1",
+        "button_link1": "",
+        "image3": "shopify:\/\/shop_images\/image001_3.jpg",
+        "blurb2": "shopify:\/\/shop_images\/MarketingAsset2_300x_a331ff49-0cb1-479d-918e-c7fa6b2370f9.png",
+        "header3": "<p>Header one<\/p>",
+        "body3": "<p>Body one<\/p>",
+        "button_label3": "Button label 3",
+        "button_link3": ""
+      }
     }
   },
   "order": [
-    "de1817ab-68bf-4cae-b190-859cfd5507e1"
+    "de1817ab-68bf-4cae-b190-859cfd5507e1",
+    "329e42ee-bbc3-4568-9eb4-9fe8825483f5",
+    "9379a9a0-77c7-438c-a104-4306c851c398"
   ]
 }
