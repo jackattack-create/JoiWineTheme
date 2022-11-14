@@ -8,10 +8,50 @@
         "padding_bottom": 36
       }
     },
+    "19b3dbee-341b-45f3-a275-3a3f758c5ab1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>So You Want To <em><strong>Rap <\/strong><\/em>With Us?<\/p>",
+            "body_size": "3rem"
+          }
+        },
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-0",
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-1",
+        "template--16422978617561__19b3dbee-341b-45f3-a275-3a3f758c5ab1-1668454048d00d2478-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "<p>So you Want to <em><strong>Rap <\/strong><\/em>with us<\/p>",
+        "heading": "",
         "bgImage": "shopify:\/\/shop_images\/shutterstock_129868538_1.jpg",
         "color_scheme": "background-2",
         "padding_top": 36,
@@ -21,6 +61,7 @@
   },
   "order": [
     "main",
+    "19b3dbee-341b-45f3-a275-3a3f758c5ab1",
     "form"
   ]
 }
