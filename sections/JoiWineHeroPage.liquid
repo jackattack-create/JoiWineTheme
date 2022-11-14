@@ -64,9 +64,10 @@
             
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                <button {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} >
+                <a href="{{ block.settings.button_link }}" class="button button--secondary">
                   {{ block.settings.button_label | escape }}
-                </button>
+                </a>
+
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}

@@ -113,9 +113,9 @@ button {
     font-weight: bold;
     padding: 10px 20px;
     width: fit-content;
-    color: #476154;
+    /* color: #476154;
     border: 2px solid #476154;
-    background-color: #F9F6F2;
+    background-color: #F9F6F2; */
     border-radius: 40px;
 }
 

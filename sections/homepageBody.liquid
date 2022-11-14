@@ -31,9 +31,9 @@
             <p>
                 {{ section.settings.body1 }}
             </p>
-            <button {% if section.settings.button_link1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link1 }}"{% endif %} >
-                  {{ section.settings.button_label1 | escape }}
-            </button>
+            <a href="{{ block.settings.button_link1 }}" class="button button--secondary">
+                {{ section.settings.button_label1 | escape }}
+            </a>
         </div>
     </div>
 
@@ -86,9 +86,9 @@
                 <p>
                     {{ section.settings.body3 }}
                 </p>
-                <button {% if section.settings.button_link1 == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.button_link1 }}"{% endif %} >
-                      {{ section.settings.button_label3 | escape }}
-                </button>
+                <a href="{{ block.settings.button_link3 }}" class="button button--secondary">
+                    {{ section.settings.button_label3 | escape }}
+                </a>
             </div>
         </div>
     </div>
