@@ -20,7 +20,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "inverse",
           "button_link": "",
           "logo_width": 100,
           "logo_position": "top-center",
