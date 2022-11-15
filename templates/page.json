@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -22,18 +23,18 @@
         "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Why is Joi sourced from Chile? ",
+            "icon": "none",
+            "row_content": "<p>We’ve searched far and wide to find the right partner. In terms of value for the money, Chile is a “far out” source with a long history of providing excellent price\/quality for the money. We also wanted to partner with a winery that makes wines with a true sense of place, along with having the best technical ability for a great quality bag-in-box wine. In addition, Joi is produced as a Certified Sustainable Wine of Chile, Certified BRC, Certified IFS, Certified Global Gap and its vegan friendly. <\/p>",
             "page": ""
           }
         },
         "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What occasions are right for drinking Joi? ",
+            "icon": "none",
+            "row_content": "<p>“You can dig it” for casual wine drinking with friends or when you just need a single glass or two? <\/p>",
             "page": ""
           }
         },
