@@ -68,9 +68,9 @@
         "21a5f258-d68c-4aa6-bae0-3ca171d4da6c": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What is the shelf life of Joi? ",
+            "icon": "none",
+            "row_content": "<p>Unopened, the wines can keep a full two years from the vintage date. <\/p>",
             "page": ""
           }
         },
