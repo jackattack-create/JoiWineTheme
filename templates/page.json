@@ -46,13 +46,63 @@
             "row_content": "<p>Both the Chardonnay and Cabernet Sauvignon are made to allow the pure, primary fruit character to shine through. The Chardonnay is fresh, crisp, bright, and lively with a minimal influence of oak. The Cabernet Sauvignon is deep, full of nicely concentrated flavors and minimal tannin to better allow for a soft finish. Unlike many other widely available box wines, Joi is very low in residual sugar.  <\/p>",
             "page": ""
           }
+        },
+        "ec24d7eb-587a-43e2-850d-0a90f2dcbd79": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the best way to store Joi? ",
+            "icon": "none",
+            "row_content": "<p>Temperature extremes are no friends of wine. Store the wines at room temperature, away from direct sunlight. Don’t leave it in the trunk of your car or in a snowbank, which would be a “bummer”!<\/p>",
+            "page": ""
+          }
+        },
+        "35382d0a-657f-4afa-a9f6-3d38e9168ede": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "21a5f258-d68c-4aa6-bae0-3ca171d4da6c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "e3178557-29a4-46ae-a7ff-68611fa35471": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "a0f230a8-1ac9-4e7f-9958-c38c38b2df3b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-0",
         "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-1",
         "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-2",
-        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-3"
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-3",
+        "ec24d7eb-587a-43e2-850d-0a90f2dcbd79",
+        "35382d0a-657f-4afa-a9f6-3d38e9168ede",
+        "21a5f258-d68c-4aa6-bae0-3ca171d4da6c",
+        "e3178557-29a4-46ae-a7ff-68611fa35471",
+        "a0f230a8-1ac9-4e7f-9958-c38c38b2df3b"
       ],
       "settings": {
         "caption": "",
