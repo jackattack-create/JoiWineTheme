@@ -1,10 +1,76 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a46384dc-93f8-49fd-bff6-2d28cac00779": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-0",
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-1",
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-2",
+        "template--16422978879705__a46384dc-93f8-49fd-bff6-2d28cac00779-1668477863ee53403f-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image": "shopify:\/\/shop_images\/aesop-wines-uuWUrbthh18-unsplash.jpg",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "a46384dc-93f8-49fd-bff6-2d28cac00779"
   ]
 }
