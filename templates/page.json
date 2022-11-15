@@ -59,9 +59,9 @@
         "35382d0a-657f-4afa-a9f6-3d38e9168ede": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "What is the best temperature for serving Joi? ",
+            "icon": "none",
+            "row_content": "<p>Serve the Chardonnay at refrigerator temperature. Pop it in the fridge for at least two hours before serving. The Cabernet Sauvignon is best served at room temperature or slightly chilled. <\/p>",
             "page": ""
           }
         },
