@@ -91,6 +91,15 @@
             "row_content": "<p>A four-ounce pour has about one hundred calories. <\/p>",
             "page": ""
           }
+        },
+        "3b1870a5-348b-4b2e-b2a5-dbcacc43e6f3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Joi vegan-friendly?",
+            "icon": "none",
+            "row_content": "<p>It’s true, some wineries use animal products to clarify their wines. Joi is 100% vegan friendly. <\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -102,7 +111,8 @@
         "35382d0a-657f-4afa-a9f6-3d38e9168ede",
         "21a5f258-d68c-4aa6-bae0-3ca171d4da6c",
         "e3178557-29a4-46ae-a7ff-68611fa35471",
-        "a0f230a8-1ac9-4e7f-9958-c38c38b2df3b"
+        "a0f230a8-1ac9-4e7f-9958-c38c38b2df3b",
+        "3b1870a5-348b-4b2e-b2a5-dbcacc43e6f3"
       ],
       "settings": {
         "caption": "",
