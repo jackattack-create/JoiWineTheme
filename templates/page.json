@@ -77,7 +77,7 @@
         "e3178557-29a4-46ae-a7ff-68611fa35471": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How long can Joi keep opened?",
+            "heading": "How long can Joi stay opened?",
             "icon": "none",
             "row_content": "<p>Once the package is opened, the wine will keep for up to six weeks. Storing the opened container in the fridge will help extend the life as well. <\/p>",
             "page": ""
