@@ -95,13 +95,13 @@
         "header1": "<p><strong>Convenient, lightweight, and eco-friendly<\/strong><\/p>",
         "body1": "<p>Easy to open, store and recycle<\/p>",
         "button_label1": "Have Questions?",
-        "button_link1": "",
+        "button_link1": "shopify:\/\/pages\/faq",
         "image3": "shopify:\/\/shop_images\/image001_3.jpg",
         "blurb2": "shopify:\/\/shop_images\/MarketingAsset2_300x_a331ff49-0cb1-479d-918e-c7fa6b2370f9.png",
         "header3": "<p><strong>Home of some of the best wine values on the planet<\/strong><\/p>",
         "body3": "<p>With the Andes to the east and Pacific Ocean to the west, Chile has some of the most protected and pristine vineyards in the wine world.<\/p>",
         "button_label3": "About Joi",
-        "button_link3": ""
+        "button_link3": "shopify:\/\/pages\/about-us"
       }
     }
   },
