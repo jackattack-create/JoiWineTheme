@@ -2,6 +2,10 @@
     --scale: calc(50vw / 3.0);
 }
 
+.aboutUsWrapper {
+    padding-top: 100px;
+}
+
 .aboutUsSectionPiece {
     display: flex;
     
@@ -56,10 +60,12 @@
     /* background-image: url(blobOne.svg); */
 
     background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
     
  
@@ -110,20 +116,12 @@
     margin-left: auto;
     margin-right: auto;
 
-    transform: scale(2.2);
+    transform: scale(1.9);
     transform-origin: center;
   
-
-    /* Old settings, come back to this if something goes wrong */
     aspect-ratio: 1/1;
-    max-width: 280px;
-    max-height: 280px;
-
-    /* width: 300px;
-    height: 300px; */
-
-    /* width: 30vw;
-    height: 30vw; */
+    max-width: 300px;
+    max-height: 300px;
     position: relative;
 }
 
@@ -136,9 +134,12 @@
 }
 
 .blob-img.b2 {
-   
-
+    /* transform: scale(0.8); */
+    overflow: visible;
     clip-path: path("M83.3,284.93c15.85,2.78,32.77,2.21,49.65-1.57,87.16-19.48,105.26-134.26,94.55-205.37-3.17-21.07-17.54-55.39-36.06-65.91-46.07-26.18-89.45-4.7-121.59,16.37C37.07,49.93,15.78,84.66,6.57,122.33c-8.45,34.55-10.24,72.05,3.61,104.82,14.1,33.35,41.46,52.24,73.11,57.78Z");
+    /* clip-path: path("M190.27,650.85c36.2,6.34,74.86,5.04,113.41-3.58,199.09-44.51,240.43-306.68,215.98-469.13-7.24-48.12-40.06-126.52-82.37-150.56-105.23-59.8-204.33-10.75-277.74,37.39C84.67,114.06,36.06,193.39,15.01,279.43c-19.31,78.92-23.38,164.59,8.25,239.43,32.2,76.19,94.7,119.33,167.01,132Z"); */
+   /* clip-path: url(blobTwo.svg); */
+
 }
 
 .blob-img.b3 {
@@ -179,11 +180,13 @@
 
 @media screen and (max-width: 1000px) {
 
-
+    .aboutUsWarpper {
+        padding-top:20px;
+    }
 
     .image-container {
-        padding-bottom: 100px;
-        padding-top: 100px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         margin: auto;
         height: 450px;
         width: 320px;

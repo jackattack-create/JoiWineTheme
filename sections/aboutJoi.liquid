@@ -1,7 +1,9 @@
 {{ 'aboutUsSections.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div style=" padding-top: 100px;">
+<div style=" padding-top: 100px;"
+    class="aboutUsWrapper"
+>
     <!-- section 1 -->
     <div class="aboutUsSectionPiece">
        
@@ -47,7 +49,9 @@
                         class="blob-img b2"
                     />
                     {%- if settings.iconTwo != blank -%}
-                        <img src="{{ section.settings.iconTwo | img_url: '100x' }}" class="blob-icon"/>
+                        <img src="{{ section.settings.iconTwo | img_url: '100x' }}" 
+                            class="blob-icon"
+                        />
                     {%- endif -%}
                     
                     
@@ -89,12 +93,8 @@
 
         
         <div class="section-text">
-            <h1>
-                {{ section.settings.headingThree }}
-            </h1>
-            <p>
-                {{ section.settings.bodyThree }}
-            </p>
+            <h1>  {{ section.settings.headingThree }} </h1>
+            <p> {{ section.settings.bodyThree }} </p>
         </div>
     </div>
 
@@ -104,15 +104,11 @@
 
             <div class="image-container">
                 <div class="blobImage b4">
-                    {%- if section.settings.imageFour != blank -%}
-                        <img 
-                            src="{{ section.settings.imageFour | img_url: 'master' }}"
-                            class="blob-img b4"
-                        />
-                    {%- endif -%}
-                    {%- if settings.iconFour != blank -%}
-                        <img src="{{ section.settings.iconFour | img_url: '100x' }}" class="blob-icon"/>
-                    {%- endif -%}
+                  
+                        <img src="{{ section.settings.imageFour | img_url: 'master' }}" class="blob-img b4" loading="lazy" />
+                   
+                        {% comment %} <img src="{{ section.settings.iconFour | img_url: '100x' }}" class="blob-icon" /> {% endcomment %}
+                 
                    
                     
                     
