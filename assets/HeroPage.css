@@ -39,12 +39,16 @@
 
 .heroSecTextBox h1 {
     /* font-size: 48px; */
-    line-height: 1.2;
+    line-height: 1;
     margin: 0;
 }
 
 h1 p {
     margin: 0;
+}
+
+.heroSecTextBox p {
+    margin-bottom: 20px;
 }
 
 .heroSecImg {

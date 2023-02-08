@@ -44,20 +44,11 @@
 }
 
 .blobImage {
-    /* width: 45vw;
-    height: 45vw; */
     top: 0;
-    /* width: 50vw;
-    height: 50vw; */
-
-    /* min-width: 350px;
-    min-height: 350px; */
 
     height: 700px;
     width: 700px;
     padding: 20px;
-
-    /* background-image: url(blobOne.svg); */
 
     background-repeat: no-repeat;
     background-position: center;
@@ -66,18 +57,11 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-
-    
- 
-   
-   
 }
 
 .blob-icon {
     position: absolute;
-    
     transform-origin: center;
-
 }
 
 
@@ -91,7 +75,7 @@
 .blobImage.b2 {
     background-image: url(blobTwo.svg);  
     background-repeat: no-repeat;
-    width: 600px;
+    /* width: 600px; */
     
     
 }
@@ -200,16 +184,16 @@
         height: 300px;
         
         transform-origin: center center;
-        transform: scale(0.9);
+        transform: scale(1);
     }
 
     .blobImage {
         position: relative;
-       height: 300px;
-       width: 300px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
        
     }
